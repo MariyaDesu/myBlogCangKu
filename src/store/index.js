@@ -34,6 +34,7 @@ const actions = {
         },
       })
       .then((res) => {
+        console.log(res);
         context.commit("GETIDARTICLE", res.data.list[0]);
       })
       .catch((err) => {
@@ -49,6 +50,7 @@ const actions = {
         },
       })
       .then((res) => {
+        console.log(res);
         context.commit("GETMSGARTICLE", res.data.list);
         
       })
